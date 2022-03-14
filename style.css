@@ -1,0 +1,122 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(255, 60, 93);
+    user-select: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.active {
+    background-color: rgb(255, 232, 232);
+    transform: translateX(20vw);
+}
+
+.random-active {
+    transform: translateX(-20vw) scaleX(-1);
+
+}
+
+.off {
+    transform: translateX(0);
+}
+
+.scoreboard {
+    flex-direction: column;
+    color: white;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 3vw; */
+    font-size: 5rem;
+
+
+}
+
+.gameboard {
+    height: 90vh;
+    padding: 3vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.scoreArea {
+    display: flex;
+}
+
+.userArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.button {
+    border: none;
+    background-color: rgb(252, 221, 46);
+    width: 5vw;
+    height: 8vh;
+    display: none;
+    border-radius: 10px;
+}
+
+.element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    height: 30vh;
+    width: 20vw;
+    margin: 1vh 0;
+    background: white;
+    box-shadow: 0px 3px 0px 5px rgb(0, 0, 0);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.element-img {
+    width: 15vw;
+    height: auto;
+}
+
+.element:active {
+    /* transform: scale(.9); */
+    background-color: rgb(255, 232, 232);
+}
+
+.randomArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.random {
+    transform: scaleX(-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    height: 30vh;
+    width: 20vw;
+    margin: 1vh 0;
+    background: white;
+    box-shadow: 0px 3px 0px 5px rgb(0, 0, 0);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.random-img {
+    width: 15vw;
+    height: auto;
+}
+
+.footer {
+    height: 4vh;
+    text-align: center;
+    color: white;
+    font-weight: 900;
+}
